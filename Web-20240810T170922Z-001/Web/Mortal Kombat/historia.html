@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="images/favicon.png" type="image/png" />
+
+  <title>Mortal Kombat - História</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Raleway">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+    @import url('https://fonts.cdnfonts.com/css/mortal-kombat');
+
+    .form-inline {
+      display: inline-block;
+    }
+    .navbar-header.col {
+      padding: 0 !important;
+    } 
+    .navbar {   
+      background: #fff;
+      padding-left: 16px;
+      padding-right: 16px;
+      box-shadow: 0 0 4px rgba(0,0,0,.1);
+    }
+    .nav-link {
+      margin: 0 5px;
+    }
+    .nav-link img {
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      margin: -8px 0;
+      float: left;
+      margin-right: 10px;
+    }
+
+    .navbar .navbar-nav a:hover, .navbar .navbar-nav a:focus {
+      color: #ffb463 !important;
+      background-color: transparent;
+    }
+    .navbar .navbar-nav a.active, .navbar .navbar-nav a.active:hover {
+      color: #e37500 !important;
+      background: transparent !important;
+    }
+
+    .navbar .nav-item i {
+      font-size: 18px;
+    }
+    .navbar .dropdown-item i {
+      font-size: 16px;
+      min-width: 22px;
+    }
+    
+    .navbar .dropdown-menu {
+      border-radius: 1px;
+      border-color: #ffb463;
+      box-shadow: 0 2px 8px rgba(0,0,0,.05);
+      background-color: black;
+    }
+    .navbar .dropdown-menu a {
+      color: #777;
+      padding: 8px 20px;
+      line-height: normal;
+      font-size: 15px;
+    }
+
+    .navbar .navbar-form {
+      margin-right: 0;
+      margin-left: 0;
+      border: 0;
+    }
+
+    @media (min-width: 992px){
+      .form-inline .input-group {
+        width: 250px;
+        margin-right: 30px;
+      }
+    }
+    @media (max-width: 991px){
+      .form-inline {
+        display: block;
+        margin-bottom: 10px;
+        margin-top: 0;
+      }
+      .input-group {
+        width: 100%;
+      }
+    }
+
+    .transparente{
+      background-size: 100% 100%;
+      background-image: linear-gradient(#fcba03, #ff3c00);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+
+    .fonteNavBar{
+      font-family: 'Fjalla One', sans-serif;
+    }
+
+    .myIconColor{
+      color: #e37500;
+    }
+
+    .myButtonColor{
+      background-color: #ffa500;
+    }
+
+    .myBorderColor{
+      border-color: #ffb463;
+    }
+
+    .myContainer{
+      background-color: #9d9fa3;
+      padding: 15px;
+    }
+
+    .myContainer2{
+      background-color: #9d9fa3;
+      padding: 15px;
+    }
+
+    .card img{
+      height: 195px;
+    }
+
+    .card{
+      margin-bottom: 20px;
+    }
+
+    hr.style5 {
+      background-color: #fff;
+      border-top: 2px dashed #8c8b8b;
+    }
+
+    html{
+      scroll-behavior: smooth;
+    }
+
+
+    .saibaTudo{
+      transition: all 0.3s ease;
+      text-decoration: none;
+      padding:10px; 
+      color: white;
+      scroll-behavior: smooth;
+    }
+
+    a:visited {
+      color: white;
+    }
+
+    a:hover {
+      color: white;
+    }
+
+    a:active {
+      color: #e37500;
+    }
+
+    .card{
+      background-color: black;
+      height: 340px;
+      transition: transform .5s;
+      color: #d6d6d6;
+    }
+
+    .card:hover{
+      transform: scale(1.03);
+    }
+
+  }
+</style>
+</head> 
+
+<body style="background-color: black;">
+  <nav class="navbar navbar-expand-lg navbar-dark fonteNavBar" style="background-color: black;">
+    <a href="#"><img src="images/iconeInicio.png" style="height: 43px;"></a>     
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
+      <div class="navbar-nav">
+        <a href="index.html" class="nav-item nav-link">Home</a>   
+        <div class="nav-item dropdown">
+          <a href="#" class="active nav-item nav-link dropdown-toggle" data-toggle="dropdown">KONHEÇA</a>
+          <div class="dropdown-menu">         
+            <a href="index.html" class="dropdown-item">Home</a>
+            <a href="historia.html" class="dropdown-item active">HISTÓRIA</a>
+            <a href="faccoes.html" class="dropdown-item">Clãs/Facções</a>
+            <a href="netherrealm.html" class="dropdown-item">NetherRealm</a>
+          </div>
+        </div>
+      </div>
+      <div class="navbar-nav ml-auto">
+        <a href="#" class="nav-item nav-link"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="nav-item nav-link"><i class="fa fa-twitter"></i></a>
+        <a href="#" class="nav-item nav-link"><i class="fa fa-instagram"></i></a>
+        <a href="#" class="nav-item nav-link"><i class="fa fa-telegram"></i></a>
+      </div>    
+    </div>
+  </nav>
+
+  <div class="container mt-3">
+
+    <h1 class="display-3 transparente" style="font-family: 'Mortal Kombat 4', sans-serif;" align="center">HISTORIA</h1>
+    <p class="lead" style="color: white;" align="center"><a href="#Saiba" class="saibaTudo" style="text-decoration: none;">Uma passada sobre 30 anos de história de Mortal Kombat.</a></p>
+  </div>
+  <!-- fim container inicial -->
+
+  <!-- container de CRIA -->
+  <div class="container myContainer" style=" border:2px solid #ffa500" align="center">
+    <img src="images/historiaCapa.jpg" style=" border:2px solid #ffa500" class="img-fluid">
+  </div>
+  <!-- fim container de CRIA -->
+
+  <hr class="style5" id="Saiba">
+  <div class="fill-container myContainer" align="center"> 
+   <div>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button collapsed fonteNavBar" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            <span class="display-5">Antes dos Mortal Kombat</span>
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Existem vários reinos ou dimensões paralelas regidos por um grupo de Deuses Anciãos. Os quatro mais relevantes pra nossa história são: Outworld, uma dimensão focada na conquista dos outros mundos pela força; Edenia, um reino belo e fértil que acaba sendo dominado por Outworld; Netherrealm, basicamente um tipo de inferno, e Earthrealm, a nossa Terra, que tem como protetor o Deus do Trovão Raiden. Com Outworld constantemente tentando se fundir com os outros reinos, usando energia vital de suas vítimas, os Deuses Anciãos tentam equilibrar a situação criando um tratado diplomático de paz, certo? Não. Eles criam um campeonato pra ver que leva a melhor no soco. O Mortal Kombat é um torneio de artes marciais que acontece de geração em geração e precisa ser vencido 10 vezes seguidas pra garantir ao vencedor a chance de dominar o reino que sedia a competição.<br><br>O reino de Edenia perdeu uma dezena de vezes. O imperador de Outword, Shao Kahn, então o conquistou, matou seu rei, Jerrod, e tomou a Rainha Sindel como esposa e a princesa Kitana como enteada. Mas Shao Kahn não sossegou. Ele queria ainda Earthrealm, e sabendo disso, a infeliz Sindel se suicidou, criando uma proteção mágica que passou a impedir o imperador de pôr os pés na Terra. Por isso, Shao Kahn precisa mandar o feiticeiro transformorfo e sugador de almas Shang Tsung em seu nome para desafiar Earthrealm em um Mortal Kombat.<br><br>Acontece que ele não contava com o Grande Kung Lao. Não, não este. Na verdade, o Grande Kung Lao foi um monge shaolin do qual o Kung Lao atual é descendente. Ele foi o primeiro a representar a Terra no Mortal Kombat, vencendo Shang Tsung, mas cometendo o erro de poupar sua vida. Após sua derrota, o feiticeiro voltou pra Outworld e trouxe de lá o príncipe dos shokans, Goro, que matou Kung Lao no torneio seguinte e venceu 9 edições seguidas da competição, permanecendo 500 anos invicto.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed fonteNavBar" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            <span class="display-5">Mortal Kombat (1992)</span>
+          </button>
+        </h2>
+
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">E é aí que a história nos games começa, no décimo Mortal Kombat em Earthrealm. Cada participante tem sua própria motivação: a oficial Sony Blade quer pegar o criminoso Kano, o astro de Hollywood Johnny Cage quer mostrar que é bom de luta, o ninja do inferno Scorpion quer vingança de seu inimigo Sub-Zero (e acaba matando ele) e o deus Raiden, que se faz humano para competir.<br><br>Mas é o monge shaolin Liu Kang que vence Goro e depois Shang Tsung, quebrando a sequência de vitórias de Outworld e mantendo a Terra a salvo por pelo menos mais 500 anos. Ou pelo menos era o que se pensava.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button class="accordion-button collapsed fonteNavBar" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            <span class="display-5">Mortal Kombat II (1993)</span>
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">De volta a Outworld, Shang Tsung está para ser executado por seu fracasso, mas convence Shao Kahn a dar a ele uma nova chance. Seu plano é atrair os campeões da Earthrealm para Outworld com um convite a um Mortal Kombat, que pelas regras não poderia ser negado. Só que o torneio não é legítimo. O melhor lutador de Earthrealm precisaria enfrentar os campeões de Shao Kahn, incluindo o substituto de Goro, Kintaro, e seria facilmente vencido pelo imperador no mano a mano.<br><br>O grupo de competidores agora é maior e mais diverso. Um descendente de Kung Lao que tem o mesmo nome; Kitana, a enteada de Shao Kahn, e seu clone feio Mileena, o igualmente horroroso Baraka; Shang Tsung, que agora está mais jovem graças a Shao Kahn; o irmão mais novo de Sub-Zero, que assume sua identidade pra se vingar de Scorpion; e o colega de Sonya, Jax, que entra no rolê pra resgatá-la. Mas mais uma vez, é Liu Kang que vence.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFour">
+          <button class="accordion-button collapsed fonteNavBar" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+            <span class="display-5">Mortal Kombat 3 (1995)</span>
+          </button>
+        </h2>
+        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Shao Kahn fica frustrado pelas tentativas que deram errado e bola um plano que não envolve um torneio de luta. Shang Tsung ressuscita Sindel em Earthrealm e a escraviza mentalmente. Com isso, a proteção mágica da Terra é quebrada e um portal se abre sobre ela, sugando almas de quase toda a população, e deixando Shao Kahn mais poderoso. Ele invade Earthrealm. O time de defesa fica maior, mas agora  perseguição contra sobreviventes também é mais intensa e encabeçada pelo líder do exército de Outworld, Motaro.<br><br>Pra completar, Jax liberta Kano por acidente; Sub-Zero é perseguido por seu próprio clã Lin Kuei, que agora é formado por ciborgues; Liu Kang vira o principal alvo de Shao Kahn e Johnny Cage morre nas mãos de Motaro. Felizmente, Liu Kang vence Kahn de novo na porrada e as almas roubadas de Earthrealm são devolvidas.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFive">
+          <button class="accordion-button collapsed fonteNavBar" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+            <span class="display-5">Mortal Kombat 4 (1997)</span>
+          </button>
+        </h2>
+        <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Com Shao Kahn fora da jogada, um Deus Ancião caído chamado Shinnok consegue fugir de Netherrealm, para onde ele foi banido por Raiden em uma batalha milhares de anos atrás. Shinnok renasce em Edenia graças ao feiticeiro Quan Chi, que roubou um amuleto mágico para trazer seu mestre de volta à vida. O plano de Shinnok é se vingar dos outros Deuses Anciãos e de Raiden, mas no processo ele usa a edeniana traidora Tanya para derrotar Kitana e Sindel, que neste ponto já estava livre da lavagem cerebral de Shang Tsung.<br><br> Quan Chi manipula Scorpion contra Sub-Zero, mas quando Scorpion descobre, ele leva o feiticeiro para sofrer em Netherrealm. Liu Kang vence Shinnok e o deus caído é banido de volta para Netherrealm, enquanto Liu e Kitana, que estavam num romance, acabam separados pelo seu senso de dever com seus respectivos reinos.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingSix">
+          <button class="accordion-button collapsed fonteNavBar" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+            <span class="display-5">Mortal Kombat: Deadly Alliance (2002)</span>
+          </button>
+        </h2>
+        <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Quan Chi consegue escapar de Netherrealm com o amuleto de Shinnok e descobre o exército secreto de soldados adormecidos, que pertenceu a Onaga, o Rei Dragão que governou Outworld antes de Shao Kahn. Ele forma uma aliança com Shang Tsung para controlar essas múmias militares e acabar com as duas únicas pessoas que poderiam atrapalhar seus planos de dominação. <br><br>Juntos, eles matam Shao Kahn em seu trono e depois quebram o pescoço de Liu Kang em Earthrealm, usando as almas dos dois no feitiço para acorda o exército. Raiden abre mão de sua posição de Deus Ancião vindo pra Terra e junta a velha galera para impedir os dois.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingSeven">
+          <button class="accordion-button collapsed fonteNavBar" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+            <span class="display-5">Mortal Kombat: Deception (2004)</span>
+          </button>
+        </h2>
+        <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Infelizmente, os guerreiros de Raiden falham na missão e apenas o Deus do Trovão sobra para lutar contra a dupla de feiticeiros. Ele desafia os dois para um Mortal Kombat bastante desbalanceado, mas acaba indo a nocaute. Depois Quan Chi e Shang Tsung brigam entre si por causa do amuleto de Shinnok e Quan Chi vence. Rápido Flashback: há muitos anos, Onaga, o Rei Dragão, se disfarçou de emissário dos Deuses Anciãos para convencer o jovem lutador Shujinko a encontrar seis artefatos. Essas seis peças chamadas de Kamidogu foram reunidas após 46 anos de procura pelo coitado do Shujinko, que acabou libertando o Rei Dragão, sem saber o que fazia.<br><br>Voltando pro presente: antes de Quan Chi poder apreciar sua vitória, Onaga aparece e, diante do desespero da situação, os três inimigos unem forças para detê-lo. Raiden se explode, destruindo o local na tentativa de matar Onaga, mas é tudo em vão. O Rei Dragão sobrevive e agora, além de imortal e de ter a habilidade de controlar um exército de mortos, ainda tem em mãos o amuleto de Shinnok. Raiden dá respawn em outro lugar, agora com uma personalidade mais sombria e impiedosa, e acaba reanimando o cadáver de Liu Kang, que vira um zumbi lutador.<br><br>Enquanto isso, a alma sem corpo de Liu Kang convence o ninja Ermac a ressuscitar todos os lutadores mortos-vivos que eram controlados por Onaga. Shujinko, cheio de culpa e buscando consertar seu erro, luta contra o Rei Dragão e consegue destruí-lo. Mas a nova versão perversa de Raiden entende que Shujinko foi uma ferramenta para a quase destruição de Earthrealm, ainda que tenha sido enganado por Onaga, e o pune com a morte por seu erro.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingEight">
+          <button class="accordion-button collapsed fonteNavBar" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+            <span class="display-5">Mortal Kombat: Armageddon (2006)</span>
+          </button>
+        </h2>
+        <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Mas nada disso importa, porque logo em seguida vilões e mocinhos são ressuscitados e a pancadaria rola solta em Edenia no estilo Battle Royale. Só que essa “Batalha do Armagedom” já era prevista por uma profecia e acaba despertando o guerreiro elemental Blaze, adormecido por muito tempo em uma pirâmide.<br><br>A profecia ainda dizia que aquele capaz de derrotar Blaze ganharia o poder definitivo para conquistar todos os reinos. Isso gera uma busca desesperada entre todos para enfrentá-lo — e muita gente se matando nas escadas. Então o pior acontece: Shao Kahn é quem alcança o topo da pirâmide e derrota Blaze, se tornando invencível.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingNine">
+          <button class="accordion-button collapsed fonteNavBar" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+            <span class="display-5">Mortal Kombat (2011)</span>
+          </button>
+        </h2>
+        <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Todos os lutadores acabaram se matando no Armagedom, menos o campeão Shao Kahn e Raiden. Com poderes ilimitados, o Imperador de Outworld surra Raiden, que em seu último segundo de vida, faz um encanto e envia uma mensagem. Quem recebe o recado é seu próprio eu do passado, durante o início do décimo Mortal Kombat na Ilha de Shang Tsung — vulgo o primeiro jogo. O Raiden do passado ganha vislumbres de eventos importantes que viriam a acontecer, como a morte de Johnny Cage, os Lin Kuei se transformando em ciborgues, a briga de Scorpion e Sub-Zero e também uma frase: “Ele precisa vencer”. Além de tudo isso, o amuleto de Raiden começa a se rachar.<br><br>Sem ele saber direito o que fazer com essas informações confusas, vários eventos acabam ocorrendo da mesma forma, como Liu Kang vencendo Shang Tsung, Scorpion matando Sub-Zero e Sindel sendo ressuscitada para a Invasão de Earthrealm por Outworld. Mas as pequenas interferências de Raiden mudam outros acontecimentos, criando uma linha do tempo alternativa. Entre eles: é o segundo Sub-Zero e não Smoke que é transformado em ciborgue, Kung Lao morre nas mãos de Shao Kahn e Johnny Cage sobrevive a Motaro. Porém, mesmo com essas mudanças, o amuleto continua a se rachar, indicando que o Armagedom ainda está por vir.<br><br>Enquanto Raiden e Liu Kang viajam para pedir orientação para os Deuses Anciãos — que mais uma vez decidem não se envolver — Shao Kahn mata Shang Tsung e transfere seu poder para Sindel. A rainha de Edenia então assassina sozinha e sem dificuldade quase todos os guerreiros de Earthrealm, até ser morta por um ataque suicida do xamã Nightwolf. Raiden e Liu Kang voltam à Terra e encontram os corpos de seus amigos no chão. Apenas Johnny Cage e Sonya sobreviveram. Raiden tenta fazer um acordo desesperado com Quan Chi, mas além de não conseguir nada ainda descobre que as almas dos guerreiros mortos na invasão viraram espectros controlados pelo feiticeiro — inclusive Scorpion.<br><br>Só que aí a ficha de Raiden cai. Ele entende que a frase “Ele deve vencer” significa que é preciso deixar que Shao Kahn invada Earthrealm e funda os reinos. Assim ele estaria violando as regras do Mortal Kombat e os Deuses Anciãos precisariam intervir. Mas naturalmente Liu Kang não recebe bem a notícia dessa nova estratégia. Cansado das tentativas fracassadas de Raiden para mudar o futuro e furioso por perder Kung Lao e Kitana, Liu Kang luta contra Raiden, que acidentalmente mata seu pupilo.<br><br>Felizmente, o Deus do Trovão estava certo. Shao Kahn invade a Terra e começa a fundir os reinos, os deuses interferem e transferem seu poder a Raiden, que destrói Shao Kahn. E todos vivem felizes para sempre, certo? Óbvio que não. Tudo isso fazia parte de um plano maior e mais maquiavélico orquestrado por Shinnok e o seu servo Quan Chi.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTen">
+          <button class="accordion-button collapsed fonteNavBar" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
+            <span class="display-5">Mortal Kombat X (2015)</span>
+          </button>
+        </h2>
+        <div id="flush-collapseTen" class="accordion-collapse collapse" aria-labelledby="flush-headingTen" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">2 anos se passaram. Quan Chi libertou Shinnok de sua prisão e Earthrealm continua lutando com o ataque pesado dos invasores. Felizmente, a resistência tem Sonya, o espadachim cego Kenshi e Johnny Cage como membros.Antes que Shinnok consiga executar seu plano de corromper a fonte de vida da Terra na Câmara Jinsei, ele é impedido e depois aprisionado em seu amuleto por Johny e Raiden. Eles também conseguem libertar Jax, Sub-Zero e Scorpion da condição de espectros de Quan Chi. Raiden esconde o amuleto em outra realidade pra garantir que Shinnok não escape. Pula 20 anos no futuro.<br><br>Nesse meio tempo, Jax abandonou as batalhas pra viver em paz, Sub-Zero retomou a liderança dos Lin Kuei e Scorpion quer matar Quan Chi por vingança, mas também reconstruiu seu clã. Finalmente o ninja amarelo e o ninja azul fizeram as pazes — mas não sem os protestos de Frost, a protegida de Sub-Zero. Sonya se tornou general, ela e Johnny se casaram, se divorciaram e no processo tiveram uma filha. Junto com a filha de Jax, Jacqui, o filho de Kenshi, Takeda, e o primo mais novo de Kung Lao, Kung Jin, Cassie Cage integra um esquadrão da nova geração de guerreiros de Earthrealm.<br><br>Em Outworld, Mileena tinha tomado o trono como herdeira de Shao Kahn, mas não demorou pra sofrer um golpe, arquitetado por seus próprios conselheiros, e acabar fugindo para o exílio. Kotal Kahn é o novo imperador. Porém, Mileena consegue o amuleto de Shinnok, o que leva os guerreiros da Terra a buscarem por ela em Outworld e até fazerem uma aliança com Kotal Kahn, visando benefícios mútuos. Mileena é executada por Kotal Kahn, que toma o amuleto pra si e quebra o acordo com a equipe de Cassie Cage.<br><br>O que ele não faz ideia é que D’Vorah, sua conselheira, trabalha secretamente para Shinnok. Jax volta à ativa e prende Quan Chi, até que Scorpion aparece para matá-lo — o que ele acaba conseguindo fazer, mas não antes do feiticeiro realizar seu encanto para trazer Shinnok de volta, graças ao amuleto entregue por D’Vorah. Shinnok vai até à Câmara Jinsei pra executar seu plano de 20 anos atrás e, pra garantir que não vai ser interrompido por Johnny Cage de novo, traz o ex-ator como refém. A câmara é corrompida, Shinnok fica ainda mais poderoso e feio e Cassie é a única que pode pôr um fim na putaria toda. E ela consegue, usando os poderes verdes que herdou do pai. Raiden se coloca no centro da câmara para purificá-la, impede o fim do mundo e família Cage Blaze parece ganhar um novo recomeço. <br><br>Só que a energia ruim da corrupção absorvida por Raiden acaba mais uma vez provocando a versão sombria de olhos vermelhos do Deus do Trovão. Ele vai até Netherrealm e ameaça diretamente os espectros de Liu Kang e Kitana, que são os novos líderes do lugar. Raiden joga a cabeça de Shinnok no chão, avisa que cansou de ser bonzinho e que caso alguém tente algo contra Earthrealm de novo… a cobra vai fumar.</div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingEleven">
+            <button class="accordion-button collapsed fonteNavBar" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEleven" aria-expanded="false" aria-controls="flush-collapseEleven">
+              <span class="display-5">Mortal Kombat 11 (2019)</span>
+            </button>
+          </h2>
+          <div id="flush-collapseEleven" class="accordion-collapse collapse" aria-labelledby="flush-headingEleven" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Dois anos após os evento de Mortal Kombat X, Kronika, a Titã do Tempo e mãe do deus Shinnok, põe em prática um plano de reiniciar a história usando a Ampulheta, um artefato capaz de controlar livremente o tempo, motivada pela mudança que Raiden causou na linha do tempo com a mensagem "Ele deve vencer" em Mortal Kombat (2011). Para isso, ela traz para o presente as versões do passado de personagens tanto da Exoterra quanto do Plano Terreno e alia-se aos corrompidos do presente, aos Lin Kuei cibernéticos e a Shao Khan, ressucitados pelos poderes de Kronika. Cabem aos guerreiros do presente e do passado se unirem para frustrar o plano da vilã.<br><br>Após o reinício do tempo e derrota de Kronika por Liu Kang Deus do Fogo, ele se torna o novo Guadião do Tempo e, junto a Raiden, prepara-se para dar prosseguimento à história. Porém o deus Fujin, o xamã Nightwolf e o feiticeiro Shang Tsung surgem para alertar Liu Kang e Raiden sobre a necessidade da coroa de Kronika para controlar a Ampulheta de forma segura, sem pôr em risco a destruição da mesma e, com isso, do próprio tempo. Porém, com o artefato detruído por Liu Kang em seu conflito com a Titã, o feiticeiro sugere que o deus envie os três para o passado, quando a coroa estava desprotegida, na ilha de Shang Tsung. Sem escolha, Liu Kang deve seguir o plano de seu inimigo mortal.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="navbar navbar-expand-lg navbar-dark fonteNavBar" style="background-color: black;">
+      <a href="#"><img src="images/iconeInicio.png" style="height: 35px;"></a> 
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+  </html>                            

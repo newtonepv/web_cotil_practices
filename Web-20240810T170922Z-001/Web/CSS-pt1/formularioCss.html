@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!doctype html>
+
+<html>
+    
+<head>
+	<meta charset="utf-8">
+	<title>Cadastro de Sócio Trikas</title>
+    <style>
+        .box {
+            border: 1px solid gray;
+            border-radius: 5px;
+            max-width: 500px;
+            box-shadow: 5px 5px 5px gray;
+            padding: 10px 30px 10px 30px;
+            background-image: url("trikas.jpg");
+            background-size: 100% 100%;
+            text-align: center;
+        }
+
+        .formataInput{
+        	width: 100%;
+        	height: 30px;
+        	margin-top: 5px;
+        	background-color: lightgray;
+        	border-radius: 10px;
+        }
+
+        .button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+        button{
+        	background-color: green;
+        	width: 100%;
+        	color: white;
+        	text-shadow: 1px 1px black;
+        	font-weight: bold;
+        	font-size: 20px;
+        	padding: 10px 0px 10px 0px;
+
+
+
+        	border-bottom: 5px solid green;
+        	border-right: 5px solid green;
+
+        	border-top: 5px solid lightgreen;
+        	border-left: 5px solid lightgreen;
+        }
+
+        button:hover{
+
+        }
+
+        input:hover{
+        	background-color: lightgray;
+        	border-color: red;
+        }
+
+        input:focus{
+        	background-color: white;
+        	border-color: red;
+        	color: red;
+        }
+
+        input:placeholder{
+        	color: white;
+        }
+
+        body {
+            font-family: arial;
+            background-image: linear-gradient(to bottom, red, orange, yellow, green, blue, purple);
+			min-height: 100vh;
+
+        }
+
+        label {
+            color: red;
+            font-weight: bold;
+        }
+
+        .box-campos {
+            margin-bottom: 20px;
+        }
+
+
+
+    </style>
+</head>
+    
+<body>
+	<div align="center">
+    <div class="box">
+	<h1>Cadastro de Sócio Trikas</h1>
+    
+	<form>
+        
+        <div class="box-campos">
+	    	<label for="nome">Nome</label>
+	    	<input id="nome" name="nome" type="text" placeholder="Digite um nome" required minlength="5">
+	    	<br>
+        </div>
+
+        <div class="box-campos">
+	    	<label for="email">E-Mail</label>
+	    	<input id="email" type="email" required placeholder="nome@email.com">
+	    	<br>
+        </div>
+
+        <div class="box-campos">
+	    	<label for="senha">Senha</label>
+	    	<input id="senha" type="password" minlength="6" required>
+	    	<br>
+        </div>
+
+        <div class="box-campos">
+	    	<label>Escolha o pior jogador:</label>
+	    	<input id="laranja" type="checkbox" value="laranja"><label for="laranja">Igor</label>
+	    	<input id="maca" type="checkbox" value="maca"><label for="maca">Gomes</label>
+	    	<input id="banana" type="checkbox" value="banana"><label for="banana">Igor Gomes</label>
+	    	<br>
+        </div>
+
+        <div class="box-campos">
+	    	<label>Sexo</label>
+	    	<input name="sexo" id="f" type="radio" value="f"><label for="f">F</label>
+	    	<input name="sexo" id="m" type="radio" value="m"><label for="m">M</label>
+	    	<input name="sexo" id="m" type="radio" value="viado"><label for="outro"><span style="color: orange;">O</span><span style="color: blue;">U</span><span style="color: red;">T</span><span style="color: green;">R</span><span style="color: purple;">O</span></label>
+	    	<br>
+        </div>
+        
+        <div class="box-campos">
+	    	<label for="cor">Escolha uma cor</label>
+	    	<input id="cor" type="color">
+	    	<br>
+        </div>
+
+        <div class="box-campos">
+	    	<label for="aniversario">Data de Aniversário</label>
+	    	<input id="aniversario" type="date" required>
+	    	<br>
+        </div>
+
+        <div class="box-campos">
+	    	<label for="idade">Idade</label>
+	    	<input id="idade" type="number" min="10">
+	     	<br>
+        </div>
+
+        <div class="box-campos">
+	    	<label for="nota">Nota</label>
+	    	<input id="nota" type="range" min="0" max="10">
+	    	<br>
+        </div>
+        
+    <div class="box-campos">
+		<label for="pagina">Página</label>
+		<input id="pagina" type="url" placeholder="https://suapagina.com">
+		<br>
+    </div>
+        
+		<button class="button-85" role="button">Cadastrar</button>
+	</form></div></div>
+    
+</body>
+</html>
+</body>
+</html>

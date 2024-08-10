@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Flexbox - Order</title>
+	<style>
+		.container{
+			max-width: 600px;
+			height: 400px;
+			margin: 0 auto;
+			border: 1px solid #000;
+			display: flex; 
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+			/* align-items: center; */
+			align-content: space-between;
+			margin-bottom: 20px;
+		}
+
+		.item{
+			font-size: 1em;
+			margin: 5px;
+			padding: 5px;
+			background: #447;
+			text-align: center;
+			color: #fff;
+			height: 200px;
+		}
+
+		.order0{
+			order: 0;
+		}
+
+		.order1{
+			order: 1;
+		}
+
+		.order2{
+			order: 2;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="item order2">Item1</div>
+		<div class="item order1">Item2</div>
+		<div class="item oreder0">Item3</div>
+	</div>
+</body>
+</html>

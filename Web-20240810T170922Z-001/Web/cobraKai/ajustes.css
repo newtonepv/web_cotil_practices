@@ -1,0 +1,118 @@
+@import url(fontes/Dead Stock - Demo);
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belgrano&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
+/**FORMS
+
+
+
+
+
+**/
+.formulariao{ 
+   display: flex;
+   border: 1px solid darkred;
+ }
+
+ .container {
+  display: inline-block;
+  position: relative;
+  padding-left: 5%;
+  width: 43%;
+  margin-bottom: 2%;
+  cursor: pointer;
+  border-radius: 10%;
+  margin: 0px 0px 0px 0px;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  height: 45%;
+  width: 8%;
+  background-color: #ffeaea;
+  border-radius: 50%;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #ffa500;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: inline-block;
+  text-decoration-color: #ffa500;
+}
+
+.checkmark:after {
+ 	top: 8%;
+	left: 8%;
+	width: 80%;
+	height: 82%;
+	border-radius: 50%;
+	background: darkred;
+}
+//* CHECKBOXES CHECKBOXES CHECKBOXES CHECKBOXESCHECKBOXES CHECKBOXES CHECKBOXES CHECKBOXESCHECKBOXES CHECKBOXES CHECKBOXES CHECKB
+CHECKBOXES CHECKBOXES CHECKBOXES CHECK/* Hide the browser's default checkbox */
+
+//* CHECKBOXES CHECKBOXES CHECKBOXES CHECKBOXESCHECKBOXES CHECKBOXES CHECKBOXES CHECKBOXESCHECKBOXES CHECKBOXES CHECKBOXES CHECKB
+CHECKBOXES CHECKBOXES CHECKBOXES CHECK/* Hide the browser's default checkbox */
+ /** iframe                             
+
+
+
+
+
+*/
+.iframe{
+	position: relative;
+	left:50%;
+	top: 50% ;
+}
+/** iframe                             
+
+
+
+
+
+*/
+.ajustes {
+	display: flex;
+
+}
+
+.logocss {
+	width: 80%;
+	height: 50%;
+}
+
+.margem {
+	margin-right: 2%;
+}
+
+
+.hr{
+ 	border-color: #ffa500;
+ 	margin-left: 0.10%;
+	background-color: #ffa500;
+}
+
+.tabelinhaProdigios{
+	width: 40%;
+}

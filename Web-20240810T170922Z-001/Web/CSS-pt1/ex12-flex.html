@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Flexbox - Flex</title>
+
+    <style>
+      body {
+        font-family: arial;
+        color: #000;
+      }
+
+      .container {
+        max-width: 600px;
+        height: 400px; 
+        margin: 0 auto;
+        border: 1px solid #000;
+        display: flex; 
+        flex-direction: row; 
+        /*flex-wrap: wrap; retirar para não ter quebra de linha qd nao cabe no container */
+        justify-content: center;
+        /*align-content: space-between;*/
+        align-items: center;
+      }
+
+      .item {
+        margin: 5px;
+        padding: 5px;
+        background: #447;
+        text-align: center;
+        font-size: 1em;
+        color: #fff;  
+        /* width: 200px; */
+      }
+
+      .flex0 {
+        flex: 0; /*flex-grow: 0, flex-shrink:1 e flex-basis:0 (para tirar a flexibilidade do elemento)*/
+      }   
+
+      .flex1 {
+        flex: 1; /*flex-grow: 1, flex-shrink:1 e flex-basis:0 (para os elementos se adaptarem ao container)*/
+      }    
+    </style>
+
+  </head>
+
+  <body>
+
+      <div class="container">
+        <div class="item flex0">Cotil</div>
+        <div class="item flex0">Cotil - Unicamp</div>
+        <div class="item flex0">Colégio Técnico de Limeira</div>   
+      </div>     
+
+      <div class="container">
+        <div class="item flex1">Cotil</div>
+        <div class="item flex1">Cotil - Unicamp</div>
+        <div class="item flex1">Colégio Técnico de Limeira</div>   
+      </div>        
+  </body>
+  
+</html>

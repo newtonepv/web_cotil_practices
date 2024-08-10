@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Insreva-se!</title>
+	<link rel="icon" href="imagens/favicon.ico">
+	<link rel="stylesheet" href="ajustes.css">
+</head>
+<body bgcolor="black" align="center">
+	<br>
+<hr>
+
+	<div align="center" >
+		<picture >
+			<img src="imagens/logoForms.jpg" style="width :600px; height:310px;" ></img>
+		</picture>
+	</div>
+
+<hr>
+<p style="font-family: 'Graduate', cursive; font-size: 40px; color:#ffa500;">
+	Inscreva-se no <br>
+	<span style="font-size: 60px;font-family:'Dead Stock - Demo'; color:darkred; ">
+	Cobra Kai
+	</span>
+</p>
+<div style="margin-left: 15%;width:70%;">
+	
+<form style="width:100%;" align="left">
+	<div class="formulariao" style="color: white; font-size: 27px; width:100%" >
+
+		<div style="border:1px solid darkred; width:40%;">
+		<fieldset align="center" style="margin:5px;border-size:2px;border-bottom-color:darkred; border-left-color:darkred; border-top-color:red; border-right-color:red; background: #303030; ">
+			<legend style="font-family: 'Graduate'; color:#ffa500; -webkit-text-stroke: 0.5px white;" align="left">Dados Pessoais</legend>
+		
+		<input style="width: 68%; background-color:#dddddb;"type="text" id="nome" size="50" maxlength="20" minlength="3" required placeholder="Nome" >
+
+		<input style="width: 20%; background-color:#dddddb;"type="data" id="idade"  required placeholder="Idade"><br>
+
+		<input style="width: 90%; background-color:#dddddb;"type="email" id="email"  maxlength="40" required placeholder="Email"><br>
+
+		<input style="width: 44%; background-color:#dddddb;" type="text" id="cpf" oninput="mascara(this)" maxlength="14" required  placeholder="CPF">
+
+		<input style="width: 44%; background-color:#dddddb;" type="text" id="telefone" size="18" minlenght="12" maxlength="12" required placeholder="Telefone"><br>
+
+		</fieldset>
+
+		<fieldset style=" border-size:2px;border-bottom-color:darkred; border-left-color:darkred; border-top-color:red; border-right-color:red; background: #303030; ">
+
+		<legend  style="font-family: 'Graduate', cursive; font-size: 100%; color:#ffa500; -webkit-text-stroke: 0.5px white;">Motivo para a prática de karatê</legend>
+
+<div style="display: flex; width:100%;" >
+
+		<div style="width:70%; height: 100%; margin-right:0px;">
+		   <select id="motivo" style="background-color:#dddddb; width: 60%;">
+		   	<option></option>
+			<option value="hobbie">Hobbie</option>
+			<option value="praticaProfissional">Prática Profissional</option>
+			<option value="defesaPessoal">Defesa Pessoal</option>
+			<option value="terapia">Terapia</option>
+		   </select>
+		   <span style=";color:#ffa500; font-family: 'Graduate', cursive; font-size: 75%;">Outros:</span>
+		   <br>
+		   <div style="padding: 6.5% 40% 1% 2%; width:100%; " align="left">
+		   <a href="pdf/inscricao.pdf#page=2" target="_blank" id="btnHora" onmouseover="botaoemcima()" onmouseout="botaofora()"
+
+		   style="border-radius: 2.5%;
+		    cursor:pointer;
+		    background-color:#cca800;border-bottom:10px solid #a88a00;
+		    border-right:20px solid #a88a00;
+		    border-left:20px solid #b98f00;
+		    border-top: 10px solid #846900;
+		    font-family:'Graduate', cursive;
+		    color:darkred; font-size:135%; text-decoration: none;
+		    letter-spacing: -1px;
+		    ">
+
+			Horários</a>
+		   </div>
+		   </div>
+
+		   <div style="width:40%; margin-left:0px;">
+		   <textarea cols="4" style=" border-radius: 2.5%; background-color:#dddddb; margin-top: 3%;margin-bottom: 4%; height:100%;  width: 100%;" type="text" id="motivo" maxlength="500" placeholder="Descreva o outro motivo"></textarea>
+		   </div>
+
+</div>
+		</fieldset>
+	</div>
+		<div style="height: 80%; width: 55%;">
+			<fieldset style="heigth: 60%; width: 100%; margin:5px;border-size:2px;border-bottom-color:darkred; border-left-color:darkred; border-top-color:red; border-right-color:red; background:#303030; font-family: 'Graduate', cursive; font-size: 22px; line-height: 190%;" >
+
+				<legend style="font-family: 'Graduate', cursive; font-size: 26px; color:#ffa500; -webkit-text-stroke: 0.5px white;">Faixa/Graduação (se tiver)</legend>
+
+<!--- Radio Buttons Radio Buttons Radio Buttons Radio Buttons Radio Buttons Radio Buttons Radio Buttons Radio Buttons Radio Buttons Radio Buttons Radio Buttons Radio Buttons Radio Buttons Radio Buttons Radio Buttons Radio Buttons Radio Buttons Radio Buttons Radio Buttons -->
+				
+				<label class="container" style="font-size: 20px;">Branco (7°kyu)
+  					<input type="radio" checked="checked" name="radio">
+  					<span class="checkmark"></span>
+				</label>
+				
+				<label class="container" style="font-size: 20px;">Azul (3ºkyu)
+				  <input type="radio" name="radio">
+				  <span class="checkmark"></span>
+				</label>
+					<br>
+				<label class="container" style="font-size: 20px;">Amarelo (6ºkyu)
+				  <input type="radio" name="radio">
+				  <span class="checkmark"></span>
+				</label>
+
+				<label class="container" style="font-size: 20px;">Vermelho (2ºkyu)
+				  <input type="radio" name="radio">
+				  <span class="checkmark"></span>
+				</label>
+
+				<label class="container" style="font-size: 20px;">Laranja (5ºkyu)
+  					<input type="radio" name="radio">
+  					<span class="checkmark"></span>
+				</label>
+				
+				<label class="container" style="font-size: 20px;">Castanho (1°kyu)
+				  <input type="radio" name="radio">
+				  <span class="checkmark"></span>
+				</label>
+					<br>
+				<label class="container" style="font-size: 20px;">Verde (4ºkyu)
+				  <input type="radio" name="radio">
+				  <span class="checkmark"></span>
+				</label>
+
+				<label class="container" style="font-size: 20px;">Preto (1° a 3°Dan)
+				  <input type="radio" name="radio">
+				  <span class="checkmark"></span>
+				</label>
+
+<!--- Radio Buttons Radio Buttons Radio Buttons Radio Buttons Radio Buttons Radio Buttons Radio Buttons Radio Buttons Radio Buttons Radio Buttons Radio Buttons Radio Buttons Radio Buttons Radio Buttons Radio Buttons Radio Buttons Radio Buttons Radio Buttons Radio Buttons -->
+<div>
+				<hr style="background-color:#ffa500; border-color:#ffa500; width:100%; margin-right:0px; margin-left: 0px;">
+</div>
+
+
+   
+		<button type="submit" name="btnEnvia" id="btnEnviar" 
+
+		style="cursor:pointer; border-bottom:10px solid darkred; border-left:10px solid darkred; border-top:10px solid red; border-right:10px solid red;height:25%; width:100%; font-family:'Dead Stock - Demo'; color:darkred; font-size:120%; background-color: #ffeaea;" >
+
+		Fazer parte do Cobra Kai</button>
+		<br>
+<div style="line-height: 14px;">
+	<input id="checkbox-1" type="checkbox" value="Aceito" required>
+      <label for="checkbox-1" style=" font-family:'Graduate', cursive; font-size:10px;">Assinei, e tenho todos os documentos pedidos pelo <a style=" color:#ffa500; text-decoration-color:darkred;" href="documentacao.html" target="_blank">PDF De licença para a prática de karatê</a></label>
+
+      <br>
+
+      <input id="checkbox-2"  type="checkbox" value="Aceito" required>
+      <label for="checkbox-2" style=" font-family:'Graduate', cursive; font-size:10px;">Farei a Prova de faixa/graduacao inicial do Cobra Kai</label><br>
+
+  </div>
+		    </fieldset>
+		
+		</div>
+	</div>
+</form>
+</div>
+<script>
+	var botao=document.getElementById("btnHora");
+	function botaoemcima()
+	{   botao.style.backgroundColor="#BF9E00";
+		botao.style.borderTop="8px solid #917700";
+		botao.style.borderLeft="18px solid #917700";
+		botao.style.borderRight="22px solid #846900";
+		botao.style.borderBottom="12px solid #846900";
+	}
+	function botaofora()
+	{
+		botao.style.backgroundColor="#cca800";
+		botao.style.borderBottom="10px solid #a88a00";
+		botao.style.borderRight="20px solid #a88a00";
+		botao.style.borderLeft="20px solid #b98f00";
+		botao.style.borderTop="10px solid #846900";
+	}
+	
+	function mascara(i){
+		var = i.value;
+
+		if(isNaN(v[v.length-1])){
+			i.value = v.substring(0, v.length-1);
+			return;
+		}
+
+		i.setAttribute("maxlenght","14");
+		if (v.length == 3 || v.length == 7) i.value += ".";
+		if (v.length == 11) i.value += "-";
+	}
+
+</script>
+</body>
+</html>
+
+		<!---------- SÓ EXEMPLO ----------
+		<label style="font-size: 20px" for="dataNasc">Data de Nascimento: </label><input type="date" id="dataNasc" size="30" maxlength="20" minlength="3" required>
+
+		<input type="password" id="senha" placeholder="Senha">
+		
+		<input type="checkbox" id="periodo" value="M"> Manhã
+		
+		<label for="dataHoraCad">Data e Hora de Cadastro</label>
+		<input type="datetime-local" id="dataHoraCad">
+
+		<label>Horário de trabalho:</label><br>
+		De: <input type="time" id="inicioTrab">
+		a: <input type="time" id="fimTrab">
+
+
+
+		<span style="font-size: 20px">Sexo:
+		M <input required type="radio" name="sexo" value="Masc">
+		F <input required type="radio" name="sexo" value="Fem"><br>
+		<input type="color" name="cor" value="#ffa500">
+
+
+
+		-->
+		

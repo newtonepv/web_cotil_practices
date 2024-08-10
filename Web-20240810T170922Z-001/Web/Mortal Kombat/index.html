@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="images/favicon.png" type="image/png" />
+
+  <title>Mortal Kombat</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Raleway">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+    @import url('https://fonts.cdnfonts.com/css/mortal-kombat');
+
+    .form-inline {
+      display: inline-block;
+    }
+    .navbar-header.col {
+      padding: 0 !important;
+    } 
+    .navbar {   
+      background: #fff;
+      padding-left: 16px;
+      padding-right: 16px;
+      box-shadow: 0 0 4px rgba(0,0,0,.1);
+    }
+    .nav-link {
+      margin: 0 5px;
+    }
+    .nav-link img {
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      margin: -8px 0;
+      float: left;
+      margin-right: 10px;
+    }
+
+    .navbar .navbar-nav a:hover, .navbar .navbar-nav a:focus {
+      color: #ffb463 !important;
+      background-color: transparent;
+    }
+    .navbar .navbar-nav a.active, .navbar .navbar-nav a.active:hover {
+      color: #e37500 !important;
+      background: transparent !important;
+    }
+
+    .navbar .nav-item i {
+      font-size: 18px;
+    }
+    .navbar .dropdown-item i {
+      font-size: 16px;
+      min-width: 22px;
+    }
+    
+    .navbar .dropdown-menu {
+      border-radius: 1px;
+      border-color: #ffb463;
+      box-shadow: 0 2px 8px rgba(0,0,0,.05);
+      background-color: black;
+    }
+    .navbar .dropdown-menu a {
+      color: #777;
+      padding: 8px 20px;
+      line-height: normal;
+      font-size: 15px;
+    }
+
+    .navbar .navbar-form {
+      margin-right: 0;
+      margin-left: 0;
+      border: 0;
+    }
+
+    @media (min-width: 992px){
+      .form-inline .input-group {
+        width: 250px;
+        margin-right: 30px;
+      }
+    }
+    @media (max-width: 991px){
+      .form-inline {
+        display: block;
+        margin-bottom: 10px;
+        margin-top: 0;
+      }
+      .input-group {
+        width: 100%;
+      }
+    }
+
+    .transparente{
+      background-size: 100% 100%;
+      background-image: linear-gradient(#fcba03, #ff3c00);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+
+    .fonteNavBar{
+      font-family: 'Fjalla One', sans-serif;
+    }
+
+    .myIconColor{
+      color: #e37500;
+    }
+
+    .myButtonColor{
+      background-color: #ffa500;
+    }
+
+    .myBorderColor{
+      border-color: #ffb463;
+    }
+
+    .myContainer{
+      background-color: #9d9fa3;
+      padding: 15px;
+    }
+
+    .myContainer2{
+      background-color: transparent;
+      padding: 15px;
+    }
+
+    .card img{
+      height: 195px;
+    }
+
+    .card{
+      margin-bottom: 20px;
+    }
+
+    hr.style5 {
+      background-color: #fff;
+      border-top: 2px dashed #8c8b8b;
+    }
+
+    html{
+      scroll-behavior: smooth;
+    }
+
+
+    .saibaTudo{
+      color: white;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      padding:10px; 
+      scroll-behavior: smooth;
+    }
+
+    a:visited {
+      color: white;
+    }
+
+    a:hover {
+      color: white;
+    }
+
+    a:active {
+      color: #e37500;
+    }
+
+    .card{
+      background-color: black;
+      height: 340px;
+      transition: transform .5s;
+      color: #d6d6d6;
+    }
+
+    .card:hover{
+      transform: scale(1.03);
+    }
+
+    a{
+      color: white;
+    }
+
+  }
+</style>
+</head> 
+
+<body style="background-color: black; ">
+  <nav class="navbar navbar-expand-lg navbar-dark fonteNavBar" style="background-color: black;">
+    <a href="#"><img src="images/iconeInicio.png" style="height: 43px;"></a>     
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
+      <div class="navbar-nav">
+        <a href="index.html" class="nav-item nav-link active">HOME</a>   
+        <div class="nav-item dropdown">
+          <a href="#" class="nav-item nav-link dropdown-toggle" data-toggle="dropdown">Konheça</a>
+          <div class="dropdown-menu">         
+            <a href="index.html" class="dropdown-item active">HOME</a>
+            <a href="historia.html" class="dropdown-item">História</a>
+            <a href="faccoes.html" class="dropdown-item">Clãs/Facções</a>
+            <a href="netherrealm.html" class="dropdown-item">NetherRealm</a>
+          </div>
+        </div>
+      </div>
+      <div class="navbar-nav ml-auto">
+        <a href="#" class="nav-item nav-link"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="nav-item nav-link"><i class="fa fa-twitter"></i></a>
+        <a href="#" class="nav-item nav-link"><i class="fa fa-instagram"></i></a>
+        <a href="#" class="nav-item nav-link"><i class="fa fa-telegram"></i></a>
+      </div>    
+    </div>
+  </nav>
+
+  <div class="container mt-3">
+
+    <div class="row" align="center">
+      <div class="col-md-4 col-sm-12 pt-1" style="color: white"><i class="bi bi-geo-alt-fill myIconColor"></i> Chicago, USA</div>
+
+      <div class="col-md-4 col-sm-12 pt-1" style="color: white"><i class="bi bi-telephone-fill myIconColor " ></i> +1 (312) 502-8374</div>
+
+      <div class="col-md-4 col-sm-12 pt-1" style="color: white"><i class="bi bi-envelope-fill myIconColor "></i> mortalkombat@wb.com</div>
+
+    </div>
+
+    <hr class="myBorderColor">
+
+    <h1 class="display-3 transparente" style="font-family: 'Mortal Kombat 4', sans-serif;" align="center">MORTAL KOMBAT</h1>
+    <p class="lead" style="color: white;" align="center"><a href="#Saiba" class="saibaTudo" style="text-decoration: none;">Saiba tudo sobre esse universo enorme.</a></p>
+  </div>
+  <!-- fim container inicial -->
+
+  <!-- container de CRIA -->
+  <div class="fill-container myContainer" align="center">
+    <img src="images/mkLogoDiv.png" class="img-fluid">
+  </div>
+  <!-- fim container de CRIA -->
+
+  <hr class="style5" id="Saiba">
+  <div class="container myContainer2 mb-4" align="center" style="border-radius: 5px">
+    <!-- 1a linha do grid system -->
+    <div class="row">
+
+      <!-- 1a div da 1a row -->
+      <div class="col-md-4 col-sm-12 mb-2">
+        <div class="card">
+          <img src="images/historia.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <a href="historia.html" style="text-decoration: none;"><h5 class="card-title fonteNavBar">HISTÓRIA</i></h5>
+              <p class="card-text">Um breve resumo pela história dos <strong>Mortal Kombat</strong> lançados durante seus 30 anos de franquia.</p></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2a div da 1a row -->
+        <div class="col-md-4 col-sm-12">
+          <div class="card">
+            <img src="images/faccoes.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <a href="faccoes.html" style="text-decoration: none;"><h5 class="card-title fonteNavBar">CLÃS/FACÇÕES</h5>
+              <p class="card-text">Konheça os clãs e faccções dos personagens de <strong>Mortal Kombat.</strong></p></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3a div da 1a row -->
+        <div class="col-md-4 col-sm-12">
+          <div class="card">
+            <img src="images/netherrealm.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <a href="netherrealm.html" style="text-decoration: none;"><h5 class="card-title fonteNavBar">A NETHERREALM</h5>
+              <p class="card-text">Saiba mais sobre a empresa criadora desse jogo, sua localização, e se cadastre para receber mais informações.</p></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- fim 1a linha do grid system -->
+
+    </div>
+
+
+    <div class="navbar navbar-expand-lg navbar-dark fonteNavBar" style="background-color: black;">
+      <a href="#"><img src="images/iconeInicio.png" style="height: 35px;"></a> 
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+  </html>                            

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Keyframe</title>
+	<style type="text/css">
+		div{
+			margin: 20px;
+			width: 100px;
+			height: 100px;
+			background: black;
+
+			animation-name: rodar;
+			animation-duration: 5s;
+			animation-timing-function: linear;
+			animation-direction: alternate;
+			animation-delay: 1s;
+		}
+
+		div:hover{
+			animation-play-state: paused;
+		}
+
+		@keyframes rodar{
+			from{
+				transform: rotate(0deg);
+			}
+			to{
+				transform: rotate(180deg);
+			}
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+</body>
+</html>

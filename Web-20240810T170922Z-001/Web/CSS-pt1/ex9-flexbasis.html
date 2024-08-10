@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Flexbox - Flexbasis</title>
+	<style type="text/css">
+		.container{
+			max-width: 600px;
+			height: 400px;
+			margin: 0 auto;
+			border: 1px solid #000;
+			display: flex; 
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+			/* align-items: center; */
+			align-content: space-between;
+			margin-bottom: 20px;
+		}
+
+		.item{
+			font-size: 1em;
+			margin: 5px;
+			padding: 5px;
+			background: #447;
+			text-align: center;
+			color: #fff;
+			height: 200px;
+		}
+
+		.tam1{
+			flex-grow: 1;
+		}
+
+		.base1{
+			flex-basis: auto;
+		}
+
+		.base2{
+			flex-basis: auto;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="item tam1">Item 1</div>
+		<div class="item base2">Item 2</div>
+		<div class="item tam1">Item 3</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+  <style type="text/css">
+    .myIconColor{
+      color: #ffa500;
+    }
+
+    .myButtonColor{
+      background-color: #ffa500;
+    }
+
+    .myBorderColor{
+      border-color: #ffa500;
+    }
+
+    .myContainer{
+      background-color: #ffcb6b;
+      padding: 15px;
+      border-radius: 5px;
+    }
+    .card img{
+      height: 195px;
+    }
+
+    .card{
+      margin-bottom: 20px;
+    }
+
+  </style>
+
+	<title>Mortal Kombat</title>
+</head>
+<body style="background-image: linear-gradient(black, #c95700);">
+	<!-- início navbar -->
+	<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Logo</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="MortalKombat.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Kampeões do Torneio</a></li>
+            <li><a class="dropdown-item" href="#">Kombatentes mais konhecidos</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item active" href="earthrealm.html">Earthrealm</a></li>
+            <li><a class="dropdown-item" href="#">Edenia</a></li>
+            <li><a class="dropdown-item" href="#">Netherrealm</a></li>
+            <li><a class="dropdown-item" href="#">Outworld</a></li>
+            <li><a class="dropdown-item" href="#">Chaosrealm</a></li>
+            <li><a class="dropdown-item" href="#">Orderrealm</a></li>
+          </ul>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link disabled">Disabled</a>
+        </li> -->
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-light myButtonColor" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<!-- fim navbar -->
+
+<!-- início container inicial -->
+<div class="container myContainer">
+
+  <h1 class="display-3">Mortal Kombat</h1>
+  <p class="lead">Saiba tudo sobre esse universo enorme.</p>
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <video preload="true" loop autoplay muted>
+        <source src="images/carrosel/scorpion.mp4" type="video/mp4">
+      </video>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Scorpion</h5>
+        <p>Facção/Clã: Shirai-Ryu</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/carrosel/subZeroCarrosel.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Sub-Zero</h5>
+        <p>Facção/Clã: Lin Kuei</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/carrosel/liuKangCarrosel.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Liu Kang</h5>
+        <p>Facção/Clã: Shaolins</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+
+
+<!-- fim container inicial -->
+
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
